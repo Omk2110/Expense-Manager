@@ -8,9 +8,9 @@ const uuid = Uuid();
 
 enum Category { food, travel, leisure, work }
 
-const categoryIcons = {
-  Category.food: Icons.lunch_dining,
-  Category.travel: Icons.flight_takeoff,
+Map<Category, IconData?> categoryIcons = {
+  Category.food: ImageIcon(AssetImage('icons/number-one.png'),size: 2,) as IconData?,
+  Category.travel: Icons.looks_two_rounded,
   Category.leisure: Icons.movie,
   Category.work: Icons.work,
 };
